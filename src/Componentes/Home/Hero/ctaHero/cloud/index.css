@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500&display=swap');
+
+.segundaSeccion{
+    height: 60vh;
+    background-image: url(./heromenu_imgs-02.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.segundaSeccion >h2{
+    color: red;
+}

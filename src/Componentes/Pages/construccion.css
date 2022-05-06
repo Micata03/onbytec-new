@@ -1,0 +1,32 @@
+.construccion{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-between;
+    align-items: end;
+    justify-items: center;
+}
+
+.construccionText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.construccionText > p{
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(61, 60, 60);
+    margin-bottom: 10vh;
+}
+
+.construccionText > p > span{
+    color: #1560a5;
+}
+
+
+@media only screen and (min-width: 300px) and (max-width: 870px){
+    .construccion{
+        grid-template-columns: 1fr;
+    }
+}

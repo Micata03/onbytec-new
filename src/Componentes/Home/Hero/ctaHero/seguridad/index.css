@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500&display=swap');
+
+
+.seccion2{
+    min-height: 60vh;
+    background-color: #00358b;
+    padding: 7rem;
+    
+}
+
+@media only screen and (min-width: 300px) and (max-width: 870px){
+    .seccion2{
+        min-height: auto;
+        padding: 0;
+    }
+    
+}

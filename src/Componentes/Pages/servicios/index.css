@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500&display=swap');
+
+.servicios_seccion{
+    margin: 10vh auto;
+
+}
+.servicios_cards{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-gap: 2rem;
+    justify-items: center;
+}
+
+.servicios_card{
+    
+    border-radius: 25px;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 80%;
+    
+}
+
+.servicios_card:hover{
+    background-color: rgba(204, 204, 204, 0.4);
+}
+.card1 > img{
+    width: 80%;
+}
+
+.card2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+}
+
+.card2 >h4{
+    font-family: 'Poppins',sans-serif;
+    color: #00358d;
+    text-transform: capitalize;
+}
+.card2 > p{
+    font-family: 'Lato', sans-serif;
+}
+
+@media only screen and (min-width: 290px) and (max-width: 850px){
+
+    .servicios_cards{
+        grid-template-columns: 100%;
+        grid-template-rows: none;
+
+    }
+    .servicios_card{
+        grid-template-columns: 100%;
+    }
+    .card1 >img{
+        width: 100%;
+    }
+}
+
+
+

@@ -1,0 +1,54 @@
+
+  
+  .menu{
+    height: 100vh;
+    width: 100vw;
+    background-color: #407bb4;
+   
+    z-index: 99;
+    position: absolute;
+    top: -25%;
+    left: 0;
+    
+  }
+  .menu-grid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .menu-close{
+    color: #fff;
+    height: 8vw;
+    width: 8vw;
+    cursor: pointer;
+    align-self: flex-end;
+  }
+  
+  .menu-img {
+    height: 10vh;
+    
+    cursor: pointer;
+    
+  }
+  .menu-links{
+   margin-top: 14vh;
+   
+  }
+  .menu-links > li{
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    line-height: 3;
+    cursor: pointer;
+    text-align: center;
+    
+    
+  }
+  .menu-links > .li:hover {
+    
+    text-decoration: underline;
+  }

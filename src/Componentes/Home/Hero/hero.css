@@ -1,0 +1,91 @@
+.hero-slider-resp{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-title-resp{
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: 15vh;
+  text-align: center;
+}
+
+.hero-text-list-resp{
+  font-family: 'Poppins', sans-serif; 
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 400; 
+  line-height: 2;
+  
+ 
+  
+}
+
+.hero-text-list-resp > ul{
+  width: 99%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  align-items: center;
+  justify-items: center;
+  box-sizing: initial;
+  position: relative;
+  left: -8vw;
+}
+
+
+
+.hero-text-list-resp > ul > li{
+  cursor: pointer;
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 3s;
+}
+
+
+
+
+
+
+.hero-text-list-resp > ul > li:hover, .hero-text-list-resp > ul > li:focus {
+  color: #fff;
+  background-size: 100% 2px;
+
+  
+}
+
+.homeMobile{
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+
+.menuOpen{
+  width: 100%;
+  position: relative;
+  top: -23vh;
+}
+
+.menuOpen > img {
+  width: 50%;
+  
+}
+
+.home-menu{
+  width: 35px;
+  height: 35px;
+  color: #fff;
+  opacity: 1;
+  cursor: pointer;
+  margin-top: 2%;
+  margin-left: 34%;
+}

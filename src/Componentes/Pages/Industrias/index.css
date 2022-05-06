@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500&display=swap');
+
+/**********hero************************/
+
+.heroInd{
+    width: 100vw;
+    height: 95vh;
+    background-image: url(./Images/industrias_web-03.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+    
+}
+
+.overlay{
+    width: 100vw;
+    height: 95vh;
+    background-image: url(./Images/industrias_web-02.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1 ;
+
+}
+
+.heroInd-text{
+    width: 30%;
+    margin-top: 16vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.heroInd-text > h2{
+    font-size: 3rem;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    
+}
+.heroInd-text > p{
+    font-size: 1.5rem;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    width: 80%;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+
+}
+
+.ind{
+    width: 40%;
+    font-size: 3.5rem;
+    margin-left: 29%;
+}
+
+.ind > span{
+    color: #00358C;
+}
+
+.row{
+    margin: 2vh 45%;
+}
+
+
+/***********************cards*******************/
+
+.ind-cards{
+    width: 58vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+
+.ind-card{
+    padding: 1rem;
+    margin-top: 3rem;
+    box-shadow: 3px 0px 12px 0px rgba(168,163,168,1);
+    height: 65vh;
+    width: 30rem;
+}
+
+.title{
+    text-transform: capitalize;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 2vh;
+}
+.desc{
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    margin-bottom: 4vh;
+
+}
+
+/********mobile************/
+@media only screen and (min-width: 290px) and (max-width: 700px){
+    .overlay{
+        background-image: none;
+        background-color: rgba(87, 120, 176, 0.8);
+    }
+    .row{
+        margin: 2vh 33%;
+    }
+    .heroInd-text{
+        width: auto;
+    }
+    .ind{
+        font-size: 2rem;
+        text-transform: none;
+    }
+    .ind-cards{
+        width: auto;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+    .ind-card{
+        width: 20rem;
+    }
+}
+
+/***************************Tablet*********************/
+@media only screen and (min-width: 768px) and (max-width: 1000px){
+    .ind-cards{
+        width: auto;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+    .ind-card{
+        width: 18rem;
+        height: auto;
+    }
+}
