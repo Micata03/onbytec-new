@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500&display=swap');
+
+
+.sobreGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.sobreGrid_texto{
+    width: 50%;
+    justify-self: center;
+}
+
+.sobreGrid_texto >h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: clamp(1rem, 5vw, 2.3rem);
+    margin-bottom: 5%;
+}
+.sobreGrid_texto > p{
+    font-family: 'Lato', sans-serif;
+}
+
+.sobreGrid_img{
+    background-color: #ccc;
+    height: 100vh;
+}
+
+.sobreGrid_img > img{
+    min-width: 80%;
+    max-width: 100%;
+    width: auto;
+    position: relative;
+    top: 15%;
+    right: 20%;
+}
+
+.segundo_parrafo-text{
+    width: 50%;
+    margin: 15vh auto;
+}
+.segundo_parrafo-text > p{
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: clamp(1.5rem, 5vw, 2.75rem);
+    text-align: center;
+    color: #88cfe8;
+}
+
+.segundo_parrafo-img >img{
+    width: 20%;
+    position: relative;
+    top: -20vh;
+}
+
+.tercer_parrafo{
+    height: 80vh;
+    background-color: #00358d;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+}
+.tercer_parrafo-img > img{
+    min-width: 50%;
+    max-width: 85%;
+    width: auto;
+    position: relative;
+    top: -10vh;
+    left: -1vw;
+}
+.tercer_parrafo-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    color: #fff;
+}
+
+.tercer_parrafo-text >h3{
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: clamp(1.5rem, 5vw, 2.75rem);
+    width: 50%;
+    text-align: center;
+   
+
+
+}
+.subrayado{
+    height: 7px;
+    width: 15vw;
+    background-color: #fff;
+    border-radius: 25px;
+    
+    margin-bottom: 8vh;
+}
+
+.tercer_parrafo-text > p{
+    width: 60%;
+}
+
+.newsletter-input{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.newsletter-input_text {
+    width: 70%;
+    
+}
+.newsletter-input_text >h6{
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(0.8rem, 5vw, 1.2rem);
+}
+.newsletter-input_text >p{
+    font-size: 0.8rem;
+}
+
+.input{
+    justify-self: stretch;
+   
+}
+.input> input{
+    border: thin solid #00358d;
+    border-radius: 0;
+}
+
+
+
+@media only screen and (min-width: 290px) and (max-width: 850px){
+
+    .sobreGrid{
+        align-items: flex-start;
+        height: auto;
+    }
+    .sobreGrid_img{
+        height: 48vh;
+    }
+
+    .sobreGrid_texto{
+        width: 80%;
+
+    }
+    .sobreGrid_img > img{
+        right: 0;
+    }
+    .tercer_parrafo{
+        height: 100vh;
+    }
+    .segundo_parrafo-text{
+        width: auto;
+    }
+    .newsletter-input_text{
+        width: auto;
+        margin-top: 5vh;
+    }
+    .input-btn{
+        margin-top: 2vh;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 850px){
+
+    .tercer_parrafo{
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+
+    }
+    .subrayado{
+        margin-bottom: 0;
+    }
+}

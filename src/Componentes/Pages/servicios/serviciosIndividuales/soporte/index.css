@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500&display=swap');
+
+
+:root{
+    --title-fontSize: clamp(2rem, 5vw, 3rem);
+    --title-blue-light: #0097ce;
+    --title-blue-dark: #15609b;
+    --title-gray: #707680;
+    --title-dark: #333333;
+    --subtitle: #808080;
+    --parrafo-light:#4d4d4d;
+    --btn-background-dark: #00358b;
+    --btn-background-light: #0097ce;
+    
+  }
+
+.soporte-grids{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.soporte-grid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin-top: 15vh;
+}
+
+.soporte-grid >h5{
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    color: var(--title-blue-dark);
+    margin-top: 3vh;
+}
+
+.tec-title{
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    color: var(--title-gray);
+    margin-top: 10vh;
+    margin-left: 5vw;
+}
+
+.tec-grids{
+    width: 80%;
+    margin: 10vh auto;
+}
+.tec-grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 5vh;
+}
+
+.tec-grid >p {
+    width: 50%;
+}
+.tec-grid > h4{
+    color: var(--title-blue-light);
+    font-size: clamp(1.5rem, 5vw, 3rem);
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 850px){
+    .soporte-grid{
+        display: none;
+    }
+    
+
+}
+
+@media only screen and (min-width: 268px) and (max-width: 850px){
+    .tec-grid{
+            flex-direction: column-reverse;
+            align-items: center;
+
+        }
+        .tec-grid > p{
+            width: 100%;
+        }
+    .tec-title {
+        text-align: center;
+    }    
+}

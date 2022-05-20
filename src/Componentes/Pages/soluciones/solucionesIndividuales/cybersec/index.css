@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500&display=swap');
+
+
+
+.componentes-info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
+   grid-gap: 50px;
+    padding: 3rem;
+    max-width: 80%;
+    margin: 10vh auto;
+}
+
+.componente-info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    
+  
+    
+}
+.info-1{
+    width: 90%;
+}
+
+.info-1 > h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #00358d;
+}
+.info-1 >h4 > span{
+    color: #88cfe8;
+}
+.info-2 > p{
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+}

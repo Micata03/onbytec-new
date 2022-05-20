@@ -10,7 +10,8 @@ function Contacto() {
         <img src={img} alt='contacto'/>
         <div className='contacto-text'>
             <h3>Conectate con nosotros</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+            <p>Estamos listos para ayudarlo, déjenos saber
+que podemos hacer por su negocio.</p>
             <Responsive displayIn={['Laptop', 'LargerThanLaptop']}>
                   <button className=' btn btn-contacto btn-desktop'>contáctanos</button>
                 </Responsive>

@@ -18,6 +18,7 @@ function Outsourcing() {
         title={'para ejecutar con éxito'}
         span={'recursos especializados'}
         parrafo={'Digital transformation requires so much more than new technology. It requires fundamental changes to culture, communications, and how work gets done. Without the right foundation in place to enable change, your digital efforts will estalla.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.'}
+        sector={'servicios'}
         />
         <article className='low-seccion'>
           <div className='descripcion_grid'>

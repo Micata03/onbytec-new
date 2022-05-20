@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500&display=swap');
+
+
+:root{
+    --title-fontSize: clamp(2rem, 5vw, 3rem);
+    --title-blue-light: #0097ce;
+    --title-blue-dark: #15609b;
+    --title-gray: #707680;
+    --title-dark: #333333;
+    --subtitle: #808080;
+    --parrafo-light:#4d4d4d;
+    --btn-background-dark: #00358b;
+    --btn-background-light: #0097ce;
+    
+  }
+
+.cloud_second-seccion{
+    display: grid;
+    /*grid-template-columns: 60% 40%;*/
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-top: 10vh;
+}
+
+.cloud-img > img{
+    width: 90%;
+}
+
+.cloud-text{
+    
+    width: 70%;
+    justify-self: center;
+    align-self: center;
+}
+
+.cloud-text > h3{
+    text-transform: uppercase;
+    color: var(--title-blue-light);
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+.evolucion{
+    margin-top: 10vh;
+}
+.evolucion > h3{
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    text-align: center;
+}
+.evolucion > img{
+    min-width: 80%;
+    max-width: 100%;
+    width: auto;
+}
+
+.cloud_servicios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    
+}
+
+.cloud_servicio{
+    height: 30vh;
+    width: 70vw;
+    background-image: url('./cloud_3.jpg');
+    background-repeat: no-repeat;
+    background-size: inherit;
+    border-radius: 20px;
+    margin-top: 5vh;
+    
+}
+
+.cloud_servicio-overlay{
+    height: 30vh;
+    width: 50vw;
+    background-color: rgba(0, 53, 140, 0.5);
+    position: relative;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+
+    
+}
+
+.cloud_servicio-text{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3rem;
+    color: #fff;
+}
+.cloud_servicio-text >h4{
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: clamp(1rem, 5vw, 2rem);
+    
+}
+.cloud_servicio-text > p{
+    font-family: 'Lato', sans-serif;
+}
+
+@media only screen and (min-width: 290px) and (max-width: 850px){
+
+    .cloud_servicio{
+        height: auto;
+    }
+    .cloud_servicio-overlay{
+        width: 100%;
+        height: auto;
+    }
+    .cloud_servicio-text{
+        width: 100%;
+        padding: 1rem;
+    }
+
+}

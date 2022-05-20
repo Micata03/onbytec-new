@@ -9,7 +9,7 @@ import logo1 from '../../../../Images/logohero-03.png'
 import Navbar from '../../navbar';
 import './header.css'
 
-function Header({img, servicio, desc, crumb, title, span, parrafo}) {
+function Header({img, servicio, desc, crumb, title, span, parrafo, sector}) {
 
     const style = {
         backgroundImage: `url(${img})`
@@ -27,7 +27,7 @@ function Header({img, servicio, desc, crumb, title, span, parrafo}) {
       setMenuOpen(false)
   }
 
-  const [crumbs, setCrumbs] = useState(['Home', 'Servicios', `${crumb}`]);
+  const [crumbs, setCrumbs] = useState(['Home', `${sector}`, `${crumb}`]);
 
   const selected = crumb => {
     console.log(crumb);

@@ -6,6 +6,7 @@ import icono2 from '../../Images/iconos_elegirnos-18.png'
 import icono3 from '../../Images/iconos_elegirnos-19.png'
 import {
     Responsive} from 'typed-responsive-react';
+import { Link } from 'react-router-dom'
 
 
 
@@ -25,10 +26,9 @@ function Onbytec (){
             <div className='elegirnos-text'>
                 <h2>¿por qué elegir onbytec?</h2>
                 <div className='sub2'></div>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                    sed diam nonummy nibh euismod tincidunt ut laoreet
-                    dolore magna aliquam erat volutpat. Ut wisi enim ad
-                    minim veniam, quis nostrud exerci.</p>
+                <p>Somos el aliado perfecto para la selección , formación ,
+                        prescripción , distribución y soporte de soluciones que
+                            mejoren la calidad de servicio.</p>
                 <div className='elegirnos-icon'>
                     <div className='icon'>
                         <img src={icono1} alt='innovacion'/>
@@ -45,10 +45,12 @@ function Onbytec (){
                     
                 </div>  
                 <Responsive displayIn={['Laptop', 'LargerThanLaptop']}>
-                  <button className=' btn btn-elegirnos btn-desktop'>sobre nosotros</button>
+                    <Link to ='/nosotros' className='btn btn-elegirnos btn-desktop'>sobre nosotros</Link>
+                  
                 </Responsive>
                 <Responsive displayIn={['mobile', 'tablet']}>
-                  <button className=' btn btn-elegirnos btn-mobile'>sobre nosotros</button>
+                <Link to ='/nosotros' className='btn btn-elegirnos btn-mobile'>sobre nosotros</Link>
+                  
                 </Responsive>
                 
             </div>

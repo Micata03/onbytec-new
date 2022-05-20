@@ -15,9 +15,7 @@ function Nosotros() {
             <div className='nosotros-frase_text'>
                 <h2>Transformación digital</h2>
                 <div className='sub'></div>
-                <p>Digital transformation requires so much more than new technology. It requires
-                fundamental changes to culture, communications, and how work gets done. Without
-                the right foundation in place to enable change, your digital efforts will stall.
+                <p>Le ayudamos con todas sus necesidades de infraestructura de IT, incluidos los servicios de diseño, implementación y soporte. Diseñamos y respaldamos soluciones de múltiples proveedores a través de una Transformación que trasciende las industrias y reinventa la experiencia del cliente.
                 </p>
             </div>
             <img src={img2} className='img2'/>

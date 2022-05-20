@@ -32,7 +32,8 @@ function Breadcrumb(props) {
                                     
                      <small className={  ` link ${ disabled }` } onClick={ () => props.selected(crumb) } style={text} >
                                     { crumb }
-                    </small>                               
+                    </small> 
+                                               
                                 
                     </li>                
                                 

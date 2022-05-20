@@ -1,6 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500&display=swap');
 @import 'animate.css';
 
+:root{
+    --title-fontSize: clamp(2rem, 5vw, 3rem);
+    --title-blue-light: #0097ce;
+    --title-blue-dark: #15609b;
+    --title-gray: #707680;
+    --title-dark: #333333;
+    --subtitle: #808080;
+    --parrafo-light:#4d4d4d;
+    --btn-background-dark: #00358b;
+    --btn-background-light: #0097ce;
+    
+  }
+
 main{
     transition:  0.85s ease-out;
     
@@ -62,7 +75,7 @@ main{
     font-size: 2.1rem;
     width: 34%;
     text-align: center;
-    color: #929093;
+    color: var(--parrafo-light);
 
 }
 .sub{
@@ -85,7 +98,7 @@ main{
     font-size: 2.1rem;
     width: 34%;
     text-align: center;
-    color: #929093;
+    color: var(--parrafo-light);
 }
 .seccion_text_false > p{
     width: 52%;
@@ -126,7 +139,7 @@ main{
     font-family: 'Poppins', sans-serif;
     width: 39%;
     text-align: center;
-    color: #00358C;
+    color: var(--title-blue-dark);
 }
 
 .grid_1 >p{

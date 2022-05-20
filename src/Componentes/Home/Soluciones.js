@@ -1,5 +1,6 @@
 import React from 'react'
 import soluciones from '../../Images/soluciones-16.jpg'
+import { Link } from 'react-router-dom'
 import {
   Responsive} from 'typed-responsive-react';
 
@@ -10,17 +11,19 @@ function Soluciones() {
             <img src={soluciones} alt='soluciones'/>
             <div className='soluciones-text'>
                 <h3>Soluciones</h3>
-                <p>Innove rápidamente,cree nuevas fuentes
-                de ingresos y mejore la experiencia de los
-                clientes con menos costos y
-                riesgos.aliquam erat volutpat. Ut wisi
-                enim ad minim veniam, quis nostrud exerci
-                tation explore nuestras soluciones.</p>
+                <p>Nuestro equipo lo acompañará en cada
+                  paso del camino a medida que
+                  encontremos las soluciones adecuadas
+                  para su entorno de IT. Nos aseguraremos
+                  de que las inversiones que realice en
+                  tecnología le brinden eficiencia,
+                  simplicidad y éxito.</p>
                 <Responsive displayIn={['Laptop', 'LargerThanLaptop']}>
-                  <button className=' btn btn-soluciones btn-desktop'>ver soluciones</button>
+                <Link to='/soluciones' className='btn btn-soluciones btn-desktop'>ver soluciones</Link>
                 </Responsive>
                 <Responsive displayIn={['mobile', 'tablet']}>
-                  <button className=' btn btn-soluciones btn-mobile'>ver soluciones</button>
+                  <Link to='/soluciones' className='btn btn-soluciones btn-mobile'>ver soluciones</Link>
+                  
                 </Responsive>
                 
             </div>

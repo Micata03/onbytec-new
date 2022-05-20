@@ -49,7 +49,7 @@ function Cloud() {
 
     />
 
-    <article classname='segundaSeccion'>
+    <article className='cloud-segundaSeccion'>
       <h2>lorem ipsum</h2>
       <div className='segunda-grid'>
           {data.map((datos, id)=>{

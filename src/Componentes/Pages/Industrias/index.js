@@ -59,11 +59,10 @@ function Industrias() {
             
             <div className='heroInd-text'>
                 <h2>Industrias</h2>
-                <p>Adapting to a diverse set of
-                    industries provides an
-                    opportunity to serve markets who
-                    can remain underserved. Creative
-                    engineers and technicians can
+                    <p>Soluciones flexibles y
+                    personalizadas que abordan las
+                    necesidades particulares de cada
+                    industria.
                 </p>
                 <Link to='/contacto'>
                     <button className='btn-contacto'>contactanos</button>
@@ -79,9 +78,9 @@ function Industrias() {
             <div className='nosotros-frase_text  '>
                 <h2 className='ind'>soluciones adecuadas <span>para cada industria</span></h2>
                 <div className='sub'></div>
-                <p style={style}>Digital transformation requires so much more than new technology. It requires
-                fundamental changes to culture, communications, and how work gets done. Without
-                the right foundation in place to enable change.
+                <p style={style}>Cada industria enfrenta desafíos comerciales, y cada empresa es única. Nuestro
+            objetivo sigue siendo el mismo; para proporcionar el mejor servicio posible para el
+            usuario final.
                 </p>
             </div>
             

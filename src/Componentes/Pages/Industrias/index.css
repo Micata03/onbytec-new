@@ -83,7 +83,7 @@
     padding: 1rem;
     margin-top: 3rem;
     box-shadow: 3px 0px 12px 0px rgba(168,163,168,1);
-    height: 65vh;
+    height: auto;
     width: 30rem;
 }
 
