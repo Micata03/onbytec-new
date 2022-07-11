@@ -7,7 +7,9 @@ import Footer from '../../../../Footer/Footer'
 import Loader from '../../../../Pages/contacto/ContacForm/Loader/Loader'
 import {data} from './data'
 
+
 import './index.css'
+
 
 
 
@@ -34,23 +36,28 @@ function Cloud() {
   
   return (
     <main>
+      
     <Layout
     img_hero={hero}
     crumb={'cloud'}
     title={'Migrar a la nube'}
-    texto={'sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation llamco laboris nisi ut aliquip.'}
+    texto={'Mueva su entorno de las instalaciones a la nube con la  máxima velocidad y facilidad.'}
     boolean={false}
     boton={true}
-    parrafo={'Lorem ipsum dolor sit amet,Infraestructura Lorem ipsum '}
-    title2={'LA NUBE LOREM IPSUM DOLOR'}
-    desc2={'Innove rápidamente,cree nuevas fuentes de ingresos y mejore la experiencia de los clientes con menos costos y riesgos.aliquam erat volutpat. Ut wisienim ad minim veniam, quis nostrud exerci tation explore nuestras soluciones.'}
+    parrafo={'Migrar a la nube marca un cambio importante en la  estrategia '}
+    title2={'EL ACERCAMIENTO CORRECTO A LA NUBE'}
+    desc2={'La decisión de migrar a la nube marca un cambio importante en la estrategia IT de una empresa, que trae consigo innumerables beneficios, desde ahorro de costos y optimización hasta flexibilidad y facilidad de mantenimiento.'}
     imgGrid={img}
-    descripcion={'Innove rápidamente,cree nuevas fuentes de ingresos y mejore la experiencia de los clientes con menos costos y riesgos.aliquam erat volutpat. Ut wisienim ad minim veniam, quis nostrud exerci tation explore nuestras soluciones. Lorem ipsum dolor sit amet,  consectetuer adipiscing elit, sed diam nonummy nibh euismod dunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,                                                  '}
-
+    descripcion={'La decisión de migrar a la nube marca un cambio importante en la estrategia IT de una empresa, que trae consigo innumerables beneficios, desde ahorro de costos y optimización hasta flexibilidad y facilidad de mantenimiento.'}
+    btnTexto={'más información'}
+    link={'/soluciones/cloud'}
     />
 
     <article className='cloud-segundaSeccion'>
-      <h2>lorem ipsum</h2>
+      <div className='cloud-segundaSeccion-title'>
+        <h2>Beneficios</h2>
+      </div>
+      
       <div className='segunda-grid'>
           {data.map((datos, id)=>{
             const {img, desc} = datos;

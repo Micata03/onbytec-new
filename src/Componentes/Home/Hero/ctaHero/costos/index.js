@@ -6,6 +6,7 @@ import Contacto from '../../../Contacto'
 import Footer from '../../../../Footer/Footer'
 import AnimatedNumbers from "react-animated-numbers";
 import CircularProgress from "./CircularProgress";
+import  costos2 from './reducir_2.jpg'
 import arrow from './flecha.png'
 import Loader from '../../../../Pages/contacto/ContacForm/Loader/Loader'
 import './index.css'
@@ -35,12 +36,12 @@ function Costos() {
         img_hero={hero}
         crumb={'costos'}
         title={'Reducir Costos'}
-        texto={'sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation llamco laboris nisi ut aliquip.'}
+        texto={'En Onbytec le ayudamos a optimizar sus costos de operaciones a precios más bajos.'}
         boolean={true}
-        boton={true}
-        parrafo={'Lorem ipsum dolor sit amet,Infraestructura Lorem ipsum olor sit amet, consectetuer adipiscing elit, sed diam'}
+        boton={false}
+        parrafo={'Una amplia gama de servicios y soluciones para ayudar a reducir sus gastos de tecnología'}
         title2={'MENOR COSTO MAYOR RENDIMIENTO'}
-        desc2={'Innove rápidamente,cree nuevas fuentes de ingresos y mejore la experiencia de los clientes con menos costos y riesgos.aliquam erat volutpat. Ut wisienim ad minim veniam, quis nostrud exerci tation explore nuestras soluciones.'}
+        desc2={'Onbytec puede trabajar con usted para estructurar soluciones financieras innovadoras que aprovechen el valor de los activos que ya tiene , reducir los pagos de la financiación, o proceder con las adquisiciones que necesita ahora mismo alineando sus costos con el uso y el efectivo caudal.'}
         imgGrid={img}
         />
         <article className='resultados'>
@@ -50,7 +51,7 @@ function Costos() {
             <img src={arrow} alt='/'/>
               <AnimatedNumbers
                       
-                      animateToNumber= '85'
+                      animateToNumber= '20'
                       fontStyle={{ fontSize: '4rem' , fontFamily: 'Lato', fontWeight: 700, color:'#1560a5'}}
                       configs={[
                         { mass: 1, tension: 220, friction: 100 },
@@ -65,7 +66,7 @@ function Costos() {
 
           </div>
           <div className='texto-num'>
-            <h6>texto texto</h6>
+            <h6>Ahorros en costos IT</h6>
             <small>* al 2021</small>
 
           </div>
@@ -76,12 +77,12 @@ function Costos() {
         <CircularProgress
         size={200}
         strokeWidth={15}
-        percentage={75}
+        percentage={50}
         color="#1560a5"
         
       />
       <div className='texto-num'>
-            <h6>texto texto</h6>
+            <h6>Ahorros en costos</h6>
             <small>* al 2021</small>
 
           </div>
@@ -107,14 +108,20 @@ function Costos() {
           </div>
 
           <div className='texto-num'>
-            <h6>texto texto</h6>
+            <h6>Efectividad</h6>
             <small>* al 2021</small>
 
           </div>
 
         </div>
       </div>
+      
     </article>
+    <div className='ultimo-texto'>
+        <img src={costos2}/>
+
+        <p>Desde mantenimiento general hasta suscripciones y licencias de software,nuestros expertos lo ayudaran en la optimización de costos en su equipo integral de IT.</p>
+      </div>
         <Contacto/>
         <Footer/>
     </main>

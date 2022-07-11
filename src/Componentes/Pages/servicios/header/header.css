@@ -14,52 +14,7 @@
     --btn-background-light: #0097ce;
     
   }
-.hero-contacto{
-   max-height: 60vh;
-    ;
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
 
-}
-.hero-text{
-  
-   
-   height: 60vh;
-   
-  
-   background-repeat: no-repeat;
-   background-size: contain;
-}
-
-
-
-.hero-text >h2{
-   font-size: clamp(1.5rem, 5vw, 3rem);
-   color: #fff;
-   font-family: 'Poppins', sans-serif;
-  position: absolute;
-  top: 22rem;
-  left: 9rem;
-   
-   font-weight: 400;
-   
-
-}
-
-.hero-text > p{
-   font-size: 1rem;
-   color: #fff;
-   font-family: 'Poppins', sans-serif;
-   font-weight: 400;
-   width: 15%;
-   line-height: 1.5;
-   position: absolute;
-   top: 26rem;
-   left: 9rem;
-   
-   
-}
 .row{
     margin: 2vh 44%;
 }
@@ -67,11 +22,12 @@
 .texto-servicio{
     margin: 5vh auto;
     width: 40%;
+    
     text-align: center;
 }
 .texto-servicio > h3{
     font-family: 'Poppins', sans-serif;
-    font-size: clamp(1.5rem, 5vw, 3rem);
+    font-size: var(--title-fontSize);
     color: var(--title-gray);
 }
 .texto-servicio > h3 > span{

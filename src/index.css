@@ -2,7 +2,7 @@
 @import 'animate.css';
 
 :root{
-  --title-fontSize: clamp(2rem, 5vw, 3rem);
+  --title-fontSize: calc(1em + 1vw);
   --title-blue-light: #0097ce;
   --title-blue-dark: #15609b;
   --title-gray: #707680;
@@ -63,7 +63,7 @@ a {
     font-size: 14px;
 }
 
-/************************Navbar************************************/
+/************************Navbar************************************
 
 .navbar{
   display: flex;
@@ -125,8 +125,8 @@ a {
 
 
 .hero{
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-image: url(./Images/fondo_hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -139,8 +139,8 @@ a {
 }
 
 .hero1{
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-image: url(./Images/fondo_hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -152,8 +152,8 @@ a {
 
 }
 .hero2{
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-image: url(./Images/fondo_hero2-02.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -165,8 +165,8 @@ a {
 
 }
 .hero3{
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-image: url(./Images/fondo_hero3.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -178,8 +178,8 @@ a {
 
 }
 .hero4{
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-image: url(./Images/fondo_hero4.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -192,8 +192,8 @@ a {
 }
 
 .hero-slider{
-  display: grid;
-  grid-template-columns: 40% 60%;
+  display: flex;
+  flex-direction: row;
   align-items: end;
 }
 
@@ -362,7 +362,7 @@ a {
 
 .soluciones{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
   width: 80%;
   justify-content: space-between;
   margin: 0 auto;
@@ -401,41 +401,46 @@ a {
 .soluciones-grid{
   
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); 
 }
 
 .soluciones-grid >img{
-  width: 55vw;
+  width: 50vw;
+ 
   z-index: 10;
-  position: relative;
-  top: 11vh;
-  left: 2vw;
+  margin-top: 10%;
+  margin-left: 10%;
+
   
 }
 
 .soluciones-text{
   background-color: #1560a8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100vh;
-  padding: 12rem;
+ 
 }
 .soluciones-text >h3{
   font-family: 'Poppins', sans-serif;
   color: rgb(255, 255, 255);
-  font-size: var(--title-fontSize);
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
   font-weight: 400;
-  margin-left: 20%;
+ 
   text-transform: uppercase;
   text-align: center;
 }
 
 .soluciones-text > p{
+  width: 50%;
   font-family: 'Lato', sans-serif;
   font-size: 1.5rem;
-  color: var(--parrafo-light);
+  color: #fff;
   text-align: left;
-  margin-top: 10vh;
-  margin-left: 6vw;
+
 }
 
 .btn-soluciones{
@@ -445,9 +450,7 @@ a {
  
   color: var(--btn-background-dark);
   border: none;
- 
-  margin-top: 15vh;
-  margin-left: 11vw;
+
 }
 
 
@@ -636,7 +639,7 @@ a {
   color: var(--btn-background-dark);
   margin-left: 2vw;
   text-transform: capitalize;
-  margin-bottom: 4vh;
+  padding-bottom: 7%;
 }
 
 /******************INDUSTRIAS*******************/
@@ -767,7 +770,7 @@ a {
 /******************CONTACTO*******************/
 
 .contacto{
-  height: 60vh;
+  height: auto;
   background-image: url(./Images/contacto-27.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -786,7 +789,7 @@ a {
   justify-content: center;
   justify-items: center;
   align-items: center;
-  position: relative;
+ 
   
 }
 
@@ -822,6 +825,7 @@ a {
   border: none;
   font-size: 20px;
   margin-top: 2%;
+  margin-bottom: 10%;
  
 }
 
@@ -857,15 +861,11 @@ a {
   .soluciones-text > p{
     font-size: 1rem;
   }
-  .soluciones-grid > img{
-    width: 59vw;
-    top: 20vh;
-    left: 4vw;
-  }
+ 
   .btn-soluciones{
     padding: 8px 42px;
     font-size: 14px;
-    margin-left: 4vw;
+   
   }
 
   .elegirnos-text > p{
@@ -873,8 +873,8 @@ a {
   }
 
   .producto-card-info{
-    width: 78%;
-    height: 80%;
+    width: 87%;
+    height: 87%;
   }
   .producto-card-info > div > p{
     width: 100%;
@@ -889,6 +889,15 @@ a {
   }
   .container > h6{
     font-size: 1rem;
+  }
+  .text{
+    margin-left: -85%;
+  }
+  .carousel-indicators{
+    left: -5%;
+  }
+  .btn-industrias{
+    top: 9%;
   }
 
 
@@ -925,6 +934,55 @@ a {
     background-position: right;
   }
 
+  .nosotros{
+    height: auto;
+  }
+  .nosotros-frase > img{
+    top: 11vh;
+  }
+  .nosotros-frase_text >h3{
+    top: 23vh;
+  }
+  .nosotros-frase_text > p{
+    width: 100%;
+  }
+  .soluciones-grid > img{
+    width: 100vw;
+    margin-left: 0;
+
+  }
+
+  .soluciones-text{
+    width: 100%;
+    height: auto;
+  }
+  .soluciones-text > h3{
+    margin-top: 10%;
+  }
+  .btn-soluciones{
+    margin-bottom: 10%;
+  }
+
+  .elegirnos{
+    margin: 0;
+  }
+
+  .elegirnos-text{
+    margin-top: 10vh;
+  }
+  .elegirnos-text >h2{
+    text-align: center; 
+  }
+  .elegirnos-text >p{
+    width: 100%;
+  }
+  .servicios{
+    height: auto;
+  }
+  .nosotros-frase_text > h2{
+    margin-top: 20vh;
+  }
+
 
 }
 
@@ -932,9 +990,13 @@ a {
   .nosotros-frase >.img1 {
     top: 0;
   }
+
+  .nosotros{
+    height: auto;
+  }
   .nosotros-frase_text > h2{
     
-    margin-top: 18vh;
+    margin-top: 20vh;
   }
   .nosotros-frase_text .sub{
     height: 3px;
@@ -943,53 +1005,52 @@ a {
     font-size: 1rem;
     width: 100%;
   }
-  .soluciones {
+  /*.soluciones {
     grid-template-columns: repeat(2, 1fr);
     width: 100%;
-  }
+  }*/
+
+  
   .icon{
     margin: 0 auto;
   }
   .icon > h6{
+
     font-size: 1rem;
   }
-  .soluciones-grid{
-    display: flex;
-    flex-direction: column;
+  .sol-contenedor{
+    height: auto;
   }
+  
   .soluciones-grid > img{
-    width: 100%;
-    left: 0;
+    width: 100vw;
+    margin-left: 0;
   }
-  .soluciones-grid > img{
-    width: 100%;
-    left: 0;
-  }
+  
   .soluciones-text{
-    padding: 0;
-    height: 70vh;
-    margin-top: 10vh;
+    justify-content: flex-start;
+    width: 78%;
+    height: auto;
+    
   }
+  
   .soluciones-text > h3{
     
-    margin-left: 0;
+    
     margin-top: 8vh;
 
   }
   .soluciones-text > p{
+    width: 78%;
     font-size: 1.3rem;
     text-align: center;
-    margin-left: 0;
+    
   }
-  .btn-soluciones{
-   
-    margin-top: 4vh;
-    margin-left: 24vw;
-  }
+ 
   .elegirnos{
     display: flex;
     flex-direction: column;
-    margin-top: 12vh;
+    margin-top: 0;
   }
   .ele-img1 {
     display: none;
@@ -1055,13 +1116,17 @@ a {
     margin-top: 17%;
   }
   .contacto{
-    height: 33vh;
+    height: auto;
     background-position: right;
   }
   .contacto-text{
     top: 0;
   }
  
+  .contacto-text > h3{
+    text-align: center;
+  
+  }
   .contacto-text > p{
     font-size: 1rem;
     text-align: center;

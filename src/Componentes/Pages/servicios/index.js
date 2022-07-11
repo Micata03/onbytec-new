@@ -13,6 +13,7 @@ import imgHeader from './servicios_header.jpg'
 import {servicios} from './serviciosIndividuales/data'
 import { Link } from 'react-router-dom';
 import './index.css'
+import NavBar from '../navbar/index';
 
 
 function Servicios() {
@@ -43,36 +44,26 @@ function Servicios() {
       const style ={
           width: '50%'
       }
+
+      const color = {
+        color: '#fff'
+    }
+
   return (
     <main>
         
         <article className='heroInd ' style={imagen}>
             <main className='overlay' style={overlay}>
-            <Responsive displayIn={['Laptop', 'LargerThanLaptop']}>
-
-            <Navbar logo={logo}/>
-            </Responsive>
-
-            
-            <Responsive displayIn={["mobile", "tablet"]}>
-        <nav className='menuOpen'>
-            <img src={logo1} />
-            <AiOutlineMenu className="home-menu" onClick={openMenu}/>
-                    {menuOpen ?  <MenuOpen close={closeMenu}/> : console.log('mp')}
-            </nav>
-            
-
-        </Responsive>    
-
+             <NavBar logo={logo} logoMobile={logo} color={color}/>
             
             
             <div className='heroInd-text' >
                 <h2>Servicios</h2>
-                <p>Adapting to a diverse set of
-                    industries provides an
-                    opportunity to serve markets who
-                    can remain underserved. Creative
-                    engineers and technicians can
+                <p>Ofrecemos servicios
+                    profesionales para respaldar su
+                    negocio con una gama completa
+                    de servicios con tecnologías y
+                    productos líderes
                 </p>
                 
                 
@@ -84,11 +75,12 @@ function Servicios() {
         
             
             <div className='nosotros-frase_text  '>
-                <h2 className='ind'>servicios tecnológicos</h2>
+                <h2 className='ind'>servicios profesionales</h2>
                 <div className='sub'></div>
-                <p style={style}>Digital transformation requires so much more than new technology. It requires
-                fundamental changes to culture, communications, and how work gets done. Without
-                the right foundation in place to enable change.
+                <p style={style}>Brindamos a su equipo un impulso automático de parte de nuestros profesionales de
+                    la industria, ya sea que esté diseñando un plan, construyendo una red, realizando una
+                    actualización o monitoreando las actividades diarias, hay un servicio para satisfacer
+                    sus necesidades
                 </p>
             </div>
             

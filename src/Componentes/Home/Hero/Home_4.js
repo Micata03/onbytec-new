@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import Home4 from '../../../Images/img_hero4.png'
+
 import HomeMobile from '../../../Images/mobile4-22.png'
 import logo from '../../../Images/logohero-03.png'
 import {AiOutlineMenu, AiOutlineDown} from 'react-icons/ai'
@@ -8,7 +8,7 @@ import {
   Responsive} from 'typed-responsive-react';
 import { Link } from 'react-router-dom'
 
-function Home_3() {
+function Home_4({background}) {
 
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -20,37 +20,58 @@ function Home_3() {
     }
   return (
     <>
+    <div className='component' style={background}>
+        <div className='componente_contenido'>
+      
+        <div className='componente_text'>
+            <p>Equipo comprometido, experimentado y altamente capacitado</p>
+            <Link to='/equipo'>
+                <button className='btn-home-hero'>Conoce más</button>
+            </Link>
+        </div> 
+        </div>
+        
+    </div>
+  {/*
+   
     <Responsive displayIn={['Laptop', 'LargerThanLaptop']}>
-   <div className='home1 home'>
-     <img src={Home4} alt='home1' className='home1'/>
-     <div className='home1-text'>
-       <p>Expandir mi equipo</p>
-       <Responsive displayIn={['Laptop', 'LargerThanLaptop']}>
-              <Link to='/equipo'>
-                <button className=' btn btn-hero btn-desktop'>Conoce más</button>
-              </Link>
+
+        <div className='home1 home'>
+              <img src={Home1} alt='home1' className='home1'/>
+              <div className='home1-text'>
+                <p>Home costos.</p>
+                <Responsive displayIn={['Laptop', 'LargerThanLaptop']}>
+                
+                  <Link to='/costos'>
+                    <button className=' btn btn-hero btn-desktop'  >Conoce más</button>
+                  </Link> 
                   
                 </Responsive>
                 <Responsive displayIn={['mobile', 'tablet']}>
                   <button className=' btn btn-hero btn-mobile'>Conoce más</button>
                 </Responsive>
-     </div>
-   </div>
-   </Responsive>
+                
+              </div>
+            </div>
 
-   <Responsive displayIn={["mobile", "tablet"]}>
-     <nav className='menuOpen'>
+
+    </Responsive>
+
+<Responsive displayIn={["mobile", "tablet"]}>
+<nav className='menuOpen'>
        <img src={logo} />
        <AiOutlineMenu className="home-menu" onClick={openMenu}/>
             {menuOpen ?  <MenuOpen close={closeMenu}/> : console.log('mp')}
      </nav>
-     <div className='home1 home'>
-             <img src={HomeMobile} alt='home1' className='homeMobile'/>
-           </div>
+      <div className='home1 home'>
+              <img src={HomeMobile} alt='home1' className='homeMobile'/>
+            </div>
 
-   </Responsive>
+</Responsive>
+
+ */} 
    </>
   )
 }
 
-export default Home_3
+export default Home_4

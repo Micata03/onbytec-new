@@ -5,6 +5,7 @@ import cloud from '../../Images/iconos_soluciones-05.png'
 import data from '../../Images/iconos_soluciones-06.png'
 import ciber from '../../Images/iconos_soluciones-07.png'
 import net from '../../Images/iconos_soluciones-08.png'
+import { Link } from 'react-router-dom'
 
 
 function Nosotros() {
@@ -22,7 +23,11 @@ function Nosotros() {
         </div>
         <div className='soluciones'>
             <div className='icon'>
-                <img src={cloud}/>
+                
+                <img src={cloud}>
+                   </img> 
+                
+                
                 <h6>cloud</h6>
 
             </div>

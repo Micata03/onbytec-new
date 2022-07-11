@@ -13,11 +13,11 @@ function Auditoria() {
         <Header
         img={img}
         servicio={'Auditoria'}
-        desc={'Digital transformation requires so much ore than new technology. It requires undamental changes to culture, communications, and how work gets done. Without the right efforts'}
+        desc={'Garantizamos la protección y seguridad de su información y sistemas a través de auditorías.'}
         crumb={'auditoria'}
         title={'Especialmente capacitados'}
         span={'profesionales'}
-        parrafo={'Digital transformation requires so much more than new technology. It requires fundamental changes to culture, communications, and how work gets done. Without the right foundation in place to enable change, your digital efforts will estalla.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.'}
+        parrafo={'La auditoría es un proceso llevado a cabo por profesionales especialmente capacitados. Consiste en recoger, agrupar y evaluar evidencias para determinar debilidades que pudieran presentarse en una revisión exhaustiva de las estaciones de trabajo, redes de comunicaciones o servidores.'}
         sector={'servicios'}
         />
 

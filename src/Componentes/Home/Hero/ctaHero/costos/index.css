@@ -50,6 +50,24 @@
 
 }
 
+.ultimo-texto{
+    display: flex;
+    flex-direction: row;
+    margin: 10% auto;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ultimo-texto > img{
+    width: 40%;
+}
+.ultimo-texto>p{
+    font-family: 'Lato' , sans-serif;
+    width: 29%;
+  
+    font-size: calc(1em + 1vw);
+}
 @media only screen and (min-width: 300px) and (max-width: 870px){
 
     .resultados{
@@ -60,5 +78,16 @@
     }
     .contenedor{
         width: 100%;
+    }
+    .ultimo-texto{
+        flex-direction: column;
+    }
+    .ultimo-texto >img{
+        width: 100%;
+    }
+    .ultimo-texto > p{
+        width: 80%;
+        text-align: center;
+        margin-top: 5%;
     }
 }

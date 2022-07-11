@@ -1,3 +1,135 @@
+@import 'animate.css';
+/******HERO NEW VERSION**********************/
+
+
+.contenedor_home_grid{
+  height: 104vh;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contenedor_home_grid_componente{
+  max-height: 104vh;
+  width: 100%;
+}
+.component{
+  height: 100%;
+ /* background-image: url('/src/Images/img_hero3.png');*/
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  transform-style: preserve-3d;
+  animation: fadeIn 1.3s forwards;
+  animation-delay: 0s;
+  margin-left: 10%;
+
+}
+
+.componente_contenido{
+  position: relative;
+ top: 93vh;
+}
+
+.componente_text{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  animation: fadeInUp 2s 0s;
+  animation-fill-mode: forwards;
+}
+
+.componente_text > p{
+  width: 50%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: clamp(.8rem, 5vw, 1.1rem);
+  color: #fff; 
+ 
+}
+
+.contenedor_texto{
+  margin: 40vh auto;
+  margin-left: 15%;
+}
+.contenedor_texto > h1{
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(1.1rem, 5vw, 2.2rem);
+  color: #fff;
+
+}
+
+.contenedor_lista > ul{
+  list-style-type: none;
+  padding-left: 0;
+  font-family: 'Poppins', sans-serif; 
+  font-size: clamp(.8rem, 5vw, 1.1rem);
+  color: rgb(255, 255, 255, 0.5);
+  font-weight: 400;
+  line-height: 2;
+  margin-top: 20%;
+}
+
+
+
+ .li-hero{
+  cursor: pointer;
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 3s;
+  
+  
+}
+
+
+ .li-hero:hover,  .li-hero:focus{
+  color: #fff;
+  background-size: 100% 2px;
+  list-style-type:'\25BA	';
+  
+  
+
+}
+.li-hero::marker{
+  color: #fff;
+  
+}
+.btn-home-hero{
+  
+  padding: 9px 21px;
+  font-family:'Lato', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  background-color: var(--btn-background-dark);
+  border-radius: 25px;
+  display: inline-block;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  font-size: clamp(.6rem, 5vw, 1rem);
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .hero-slider-resp{
   display: flex;
   flex-direction: column;

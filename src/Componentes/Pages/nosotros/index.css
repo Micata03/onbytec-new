@@ -18,7 +18,7 @@
 .sobreGrid_texto >h3{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    font-size: clamp(1rem, 5vw, 2.3rem);
+    font-size: calc(1em + 1vw);
     margin-bottom: 5%;
 }
 .sobreGrid_texto > p{
@@ -46,7 +46,7 @@
 .segundo_parrafo-text > p{
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
-    font-size: clamp(1.5rem, 5vw, 2.75rem);
+    font-size: calc(1em + 1vw);
     text-align: center;
     color: #88cfe8;
 }
@@ -84,7 +84,7 @@
 .tercer_parrafo-text >h3{
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
-    font-size: clamp(1.5rem, 5vw, 2.75rem);
+    font-size: calc(1em + 1vw);
     width: 50%;
     text-align: center;
    
@@ -120,7 +120,7 @@
 }
 .newsletter-input_text >h6{
     font-family: 'Poppins', sans-serif;
-    font-size: clamp(0.8rem, 5vw, 1.2rem);
+    font-size: calc(1em + 1vw);
 }
 .newsletter-input_text >p{
     font-size: 0.8rem;
@@ -155,14 +155,14 @@
         right: 0;
     }
     .tercer_parrafo{
-        height: 100vh;
+        height: auto;
     }
     .segundo_parrafo-text{
         width: auto;
     }
     .newsletter-input_text{
         width: auto;
-        margin-top: 5vh;
+        margin-top: 15vh;
     }
     .input-btn{
         margin-top: 2vh;

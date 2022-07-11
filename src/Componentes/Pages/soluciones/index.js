@@ -9,9 +9,10 @@ import logo from '../../../Images/logohero-03.png'
 import logo1 from '../../../Images/logohero-03.png'
 import MenuOpen from '../../MenuOpen/MenuOpen';
 import Breadcrumb from '../../Breadcrumb'
-import imgHeader from './soluciones_hero.jpg'
+import imgHeader from './soluciones_web1.jpg'
 import {soluciones} from './data'
 import { Link } from 'react-router-dom';
+import NavBar from '../navbar/index';
 
 
 
@@ -21,6 +22,10 @@ function Servicios() {
     const imagen = {
         backgroundImage : `url(${imgHeader})`
     }
+    const color = {
+        color: '#fff'
+    }
+
 
     const overlay = {
         background: 'rgba(0, 53, 140, 0.8)'
@@ -52,32 +57,14 @@ function Servicios() {
     <main>
         
         <article className='heroInd ' style={imagen}>
-            <main className='overlay' style={overlay}>
-            <Responsive displayIn={['Laptop', 'LargerThanLaptop']}>
-
-            <Navbar logo={logo}/>
-            </Responsive>
-
-            
-            <Responsive displayIn={["mobile", "tablet"]}>
-        <nav className='menuOpen'>
-            <img src={logo1} />
-            <AiOutlineMenu className="home-menu" onClick={openMenu}/>
-                    {menuOpen ?  <MenuOpen close={closeMenu}/> : console.log('mp')}
-            </nav>
-            
-
-        </Responsive>    
+            <main  >
+            <NavBar logo={logo} logoMobile={logo} color={color}/>
 
             
             
             <div className='heroInd-text' >
                 <h2>Soluciones</h2>
-                <p>Adapting to a diverse set of
-                    industries provides an
-                    opportunity to serve markets who
-                    can remain underserved. Creative
-                    engineers and technicians can
+                <p>Lo ayudaremos a satisfacer la demanda de constante innovación en el camino a la transformacion digital.
                 </p>
                 
                 

@@ -25,3 +25,9 @@
     text-align: center;
     color: #88cfe8;
 }
+
+@media only screen and (min-width: 300px) and (max-width: 670px){
+    .transformacion-text > h4{
+        width: 100%;
+    }
+}

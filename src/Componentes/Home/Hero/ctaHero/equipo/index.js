@@ -30,26 +30,28 @@ function Equipo() {
         img_hero={hero}
         crumb={'equipo'}
         title={'Expandir mi equipo'}
-        texto={'sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation llamco laboris nisi ut aliquip.'}
+        texto={'Experiencia especializada en tecnología determinada, una plataforma en la nube o un tipo de proyecto'}
         boolean={true}
-        
-        parrafo={'Lorem ipsum dolor sit amet,Infraestructura Lorem ipsum olor sit amet, consectetuer adipiscing elit, sed diam'}
-        title2={'equipo lorem ipsum dolor'}
-        desc2={'Innove rápidamente,cree nuevas fuentes de ingresos y mejore la experiencia de los clientes con menos costos y riesgos.aliquam erat volutpat. Ut wisienim ad minim veniam, quis nostrud exerci tation explore nuestras soluciones.'}
+        boton={true}
+        parrafo={'Equipo comprometido, experimentado y altamente capacitado'}
+        title2={'los recursos correctos'}
+        desc2={'Las empresas se están volviendo cada vez más impulsadas por el software y centradas en el cliente. Al involucrar a nuestro equipo de expertos experimentados, los clientes saben que tienen los recursos listos para mantener sus sistemas funcionando sin problemas y de forma segura.'}
         imgGrid={img}
+        btnTexto={'contacto'}
+        link={'/contacto'}
         />
         <article className='seccion'>
           <div className='seccion-grid'>
             <div className='seccion-grid-1'>
               <ol>
-                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nib.</li>
-                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nib.</li>
-                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nib.</li>
-                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nib.</li>
+                <li>Realizamos actividades clave necesarias para una transformación digital exitosa</li>
+                <li>Determinamos la mejor manera de medir los resultados exitosos</li>
+                <li>Objetivos explícitos de mejorar la eficiencia, reducir la complejidad y el costo total de propiedad</li>
+                
               </ol>
             </div>
             <div className='seccion-grid-2'>
-              <p><span>Lorem ipsum dolor  sit</span> infraestructura Lorem</p>
+              <p><span>Exactamente</span> lo que necesita su equipo</p>
               <div className='p-sub'></div>
             </div>
           </div>

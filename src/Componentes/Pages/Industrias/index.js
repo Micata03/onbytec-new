@@ -1,8 +1,7 @@
 import React, {useState} from 'react'
 import Navbar from '../navbar/index'
 import Contacto from '../../Home/Contacto'
-import {AiOutlineMenu, AiOutlineDown} from 'react-icons/ai'
-import MenuOpen from '../../MenuOpen/MenuOpen';
+import NavBar from '../navbar/index'
 import Footer from '../../Footer/Footer'
 import Breadcrumb from '../../Breadcrumb'
 import logo from '../../../Images/logohero-03.png'
@@ -33,27 +32,18 @@ function Industrias() {
     const style ={
         width: '50%'
     }
+    const color = {
+        color: '#fff'
+    }
+
     
   return (
     <main>
         
         <article className='heroInd '>
             <main className='overlay'>
-            <Responsive displayIn={['Laptop', 'LargerThanLaptop']}>
-
-            <Navbar logo={logo}/>
-            </Responsive>
-
-            
-            <Responsive displayIn={["mobile", "tablet"]}>
-        <nav className='menuOpen'>
-            <img src={logo1} />
-            <AiOutlineMenu className="home-menu" onClick={openMenu}/>
-                    {menuOpen ?  <MenuOpen close={closeMenu}/> : console.log('mp')}
-            </nav>
-            
-
-        </Responsive>    
+            <NavBar logo={logo} logoMobile={logo} color={color}/>
+          
 
             
             
