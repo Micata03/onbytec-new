@@ -17,6 +17,7 @@
    
     background-repeat: no-repeat;
     background-size: contain;
+    padding: 3rem;
 }
 
 
@@ -25,9 +26,7 @@
     font-size: 2.5rem;
     color: #fff;
     font-family: 'Poppins', sans-serif;
-   position: absolute;
-   top: 22rem;
-   left: 9rem;
+   
     
     font-weight: 400;
     
@@ -41,9 +40,7 @@
     font-weight: 400;
     width: 15%;
     line-height: 1.5;
-    position: absolute;
-    top: 26rem;
-    left: 9rem;
+   
     
     
 }

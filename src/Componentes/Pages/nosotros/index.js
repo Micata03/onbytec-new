@@ -13,10 +13,12 @@ import circle from './sobre_2.png'
 import contact from './sobre_3.png'
 import misc from '../../../Images/misc_elegirnos-23.png'
 import { Link } from 'react-router-dom'
+import {useForm} from '../../Helpers/useForm'
 import './index.css'
 
 import {
     Responsive} from 'typed-responsive-react';
+import NavBar from '../navbar/index';
 
 function Nosotros() {
 
@@ -45,33 +47,50 @@ function Nosotros() {
     const height={
         height:'100vh'
     }
-  
-   
+    const color = {
+        color: '#fff'
+    }
+
+
+    const initialForm ={
+      
+    
+        email:'',
+      
+    }
+    const validationsForm = (form)=>{
+        let errors ={};
+        
+        let regexEmail=  /^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$/;
+       
+    
+       
+        if(!form.email.trim()){
+            errors.email = '*'
+        }else if(!regexEmail.test(form.email.trim())){
+            errors.email = 'Email invalido'
+        }
+        
+    
+    
+        return errors;
+    }
+    const{form, errors, loading, response, handleBlur, handleChange, handleSubmit}= useForm(initialForm, validationsForm)
       
   return (
     <main>
         <article className='heroInd ' style={style} >
             <main className='overlay'>
-            <Responsive displayIn={['Laptop', 'LargerThanLaptop']}>
-
-            <Navbar logo={logo}/>
-            </Responsive>
-
-            
-            <Responsive displayIn={["mobile", "tablet"]}>
-        <nav className='menuOpen'>
-            <img src={logo1} />
-            <AiOutlineMenu className="home-menu" onClick={openMenu}/>
-                    {menuOpen ?  <MenuOpen close={closeMenu}/> : console.log('mp')}
-            </nav>
-            
-
-        </Responsive>    
-
+            <NavBar logo={logo} logoMobile={logo} color={color}/>
             
             
             <div className='heroInd-text'>
                 <h2>Sobre Onbytec</h2>
+                <p>Conectamos personas a través de
+                    soluciones creativas para la
+                    integración de servicios de
+                    tecnología y telecomunicaciones.</p>
+              
               
                
                 
@@ -82,19 +101,17 @@ function Nosotros() {
         <article>
             <div className='sobreGrid'>
                 <div className='sobreGrid_texto'>
-                    <h3>Lorem ipsim dolor</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetuer
-                        adipiscing elit, sed diam nonummy nibh
-                        euismod tincidunt ut laoreet dolore
-                        magna aliquam erat volutpat. Ut wisi
-                        enim ad minim veniam, quis nostrud
-                        exerci tation ullamcorper suscipit lobortis
-                        nisl ut aliquip ex ea commodo consequat.
-                        Duis autem vel eum iriure dolor in
-                        hendrerit in vulputate velit esse molestie
-                        consequat, vel illum dolore eu feugiat
-                        nulla facilisis at vero eros et accumsan et
-                        iusto odio dignissim qui
+                    <h3>Servicios de tecnología
+                            para su negocio</h3>
+                    <p>Onbytec se enfoca en soluciones que lo
+                        ayudarán a administrar sus operaciones,
+                        optimizar su IT, asegurar y transformar su
+                        negocio,diseñamos, implementamos y
+                        gestionamos con éxito soluciones. Porque
+                        al igual que su negocio, siempre está
+                        cambiando. Por eso es tan importante
+                        elegir el proveedor de tecnología
+                        adecuado.
                     </p>
                 </div>
             <div className='sobreGrid_img'>
@@ -129,10 +146,10 @@ function Nosotros() {
             <div className='tercer_parrafo-text'>
                 <h3>trabaja con nosotros</h3>
                 <div className='subrayado'></div>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
-                    elit, sed diam nonummy nibh euismod tincidunt ut
-                    laoreet dolore magna aliquam erat volutpat. Ut wisi
-                    enim ad minim veniam, quis nostrud
+                <p>Siempre estamos en la búsqueda de profesionales
+                    apasionados capaces de adaptarse a los nuevos desafíos
+                    de la transformación digital. Anímate a ser parte del
+                    equipo de Onbytec.
                 </p>
                 <Link to='/nosotros/rrhh' className='btn btn-contacto'>
                     ver todos
@@ -147,19 +164,27 @@ function Nosotros() {
                 <div className='newsletter-input'>
                     <div className='newsletter-input_text'>
                         <h6>Suscribite a nuestro Newsletter</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing
-                    elit, sed diam nonummy nibh euismod tincidunt ut
-                    laoreet dolore magna aliquam erat volutpat</p>
+                        <p>Mantente informado sobre las últimas noticias del
+                            ambiente tecnológico y de Onbytec.</p>
                     </div>
+                    <form onSubmit={handleSubmit}>
                     <div className='input'>
-                    <input placeholder='Introduce el e-mail'></input>
+                    <input placeholder='Introduce el e-mail'
+                    type= 'email' 
+                    name='email'
+                    onBlur={handleBlur}   
+                onChange={handleChange} 
+                value={form.email} 
+                required ></input>
+                {errors.email && <small>{errors.email}</small>}
                     </div>
+                    
                     <div className='input-btn'>
 
                     
-                    <button className='btn btn-hero'>enviar</button>
+                    <button type='submit' className='btn btn-hero' >enviar</button>
                     </div>
-                    
+                    </form>
                 </div>
             </div>
         </article>

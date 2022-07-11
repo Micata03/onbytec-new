@@ -24,7 +24,7 @@
 
 .info-1 > h4{
     font-family: 'Poppins', sans-serif;
-    font-size: 2rem;
+    font-size: var(--title-fontSize);
     text-transform: uppercase;
     text-align: center;
     color: #00358d;
@@ -36,3 +36,49 @@
     font-family: 'Lato', sans-serif;
     font-size: 1rem;
 }
+
+.componentes-textos{
+    text-align: center;
+    padding-top: 5vh;
+
+}
+
+
+.componentes-textos >h2{
+    font-family: 'Poppins' , sans-serif;
+    font-size: calc(1.3em + 1.3vw);
+    text-transform: uppercase;
+   
+}
+.componentes-textos >p{
+    font-family: 'Lato', sans-serif;
+    width: 30%;
+    margin: 3vh auto;
+    
+}
+
+.banner-seguridad{
+    background-color: #1560a5;
+    height: 40vh;
+}
+
+
+.banner-seguridad-text > p{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: calc(1em + 1vw);
+    width: 40%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 5%;
+}  
+
+.banner-sub{
+    height: 6px;
+    width: 20%;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 2vh auto;
+}
+
+

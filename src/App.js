@@ -17,17 +17,20 @@ import Soporte from './Componentes/Pages/servicios/serviciosIndividuales/soporte
 import Outsourcing from './Componentes/Pages/servicios/serviciosIndividuales/outsourcing';
 import Servicios from './Componentes/Pages/servicios';
 import Nosotros from './Componentes/Pages/nosotros/index';
-import Submenu from './Componentes/Pages/navbar/submenu/Submenu';
+
 import Soluciones from './Componentes/Pages/soluciones/index';
 import CloudSoluciones from './Componentes/Pages/soluciones/solucionesIndividuales/cloud';
 import Cybersecurity from './Componentes/Pages/soluciones/solucionesIndividuales/cybersec';
 import Datacenter from './Componentes/Pages/soluciones/solucionesIndividuales/datacenter';
 import Networking from './Componentes/Pages/soluciones/solucionesIndividuales/networking';
 import Rrhh from './Componentes/Pages/nosotros/sumate';
+import Navbar from './Componentes/Pages/navbar';
+import NavBar from './Componentes/Pages/navbar';
 function App() {
   return (
     <BrowserRouter>
-{/* <Submenu/>*/}
+   
+    
     <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/contacto' element={<Contacto/>}/>

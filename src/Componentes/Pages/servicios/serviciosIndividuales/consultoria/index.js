@@ -14,11 +14,11 @@ function Consultoria() {
         <Header
         img={img}
         servicio={'Consultoria'}
-        desc={'Digital transformation requires so much ore than new technology. It requires undamental changes to culture, communications, and how work gets done. Without the right efforts'}
+        desc={'Te acompañamos durante todo el proyecto o servicio tecnológico y te asesoramos'}
         crumb={'consultoria'}
         title={'Ante nuevas tecnologías'}
         span={'fuente de consulta'}
-        parrafo={'Digital transformation requires so much more than new technology. It requires fundamental changes to culture, communications, and how work gets done. Without the right foundation in place to enable change, your digital efforts will estalla.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.'}
+        parrafo={'Trabajamos con usted para desarrollar estrategias para mejorar la infraestructura técnica y las eficiencias operativas con un enfoque independiente de la tecnología y de múltiples proveedores.'}
         sector={'servicios'}
         />
         <article className='low-seccion'>

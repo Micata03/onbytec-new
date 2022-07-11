@@ -21,6 +21,7 @@ import {
     Responsive} from 'typed-responsive-react';
 
 import './index.css'
+import NavBar from '../../../Pages/navbar/index';
 
 function Rrhh() {
 
@@ -54,27 +55,18 @@ function Rrhh() {
       backgroundColor: '#0097ce'
   }
 
+  const links = {
+    color: '#fff'
+}
+
+
    
       
   return (
     <main>
         <article className='heroInd ' style={style} >
             <main className='overlay' style={overlay}>
-            <Responsive displayIn={['Laptop', 'LargerThanLaptop']}>
-
-            <Navbar logo={logo}/>
-            </Responsive>
-
-            
-            <Responsive displayIn={["mobile", "tablet"]}>
-        <nav className='menuOpen'>
-            <img src={logo1} />
-            <AiOutlineMenu className="home-menu" onClick={openMenu}/>
-                    {menuOpen ?  <MenuOpen close={closeMenu}/> : console.log('mp')}
-            </nav>
-            
-
-        </Responsive>    
+            <NavBar logo={logo} logoMobile={logo} color={links}/>
 
             
             

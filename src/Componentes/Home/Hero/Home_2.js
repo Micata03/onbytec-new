@@ -8,7 +8,7 @@ import {
   Responsive} from 'typed-responsive-react';
 import { Link } from 'react-router-dom'
 
-function Home_2() {
+function Home_2({background}) {
 
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -21,26 +21,45 @@ function Home_2() {
   return (
 
     <>
-     <Responsive displayIn={['Laptop', 'LargerThanLaptop']}>
-    <div className='home1 home'>
-      <img src={Home2} alt='home1' className='home1'/>
-      <div className='home1-text'>
-        <p>Migrar a la nube.</p>
-        <Responsive displayIn={['Laptop', 'LargerThanLaptop']}>
-          <Link to='/cloud'>
-            <button className=' btn btn-hero btn-desktop'>Conoce más</button>
-          </Link>
+    <div className='component' style={background}>
+        <div className='componente_contenido'>
+      
+        <div className='componente_text'>
+            <p>Aumente la eficiencia y la productividad en toda su organización en la nube</p>
+            <Link to='/cloud'>
+                <button className='btn-home-hero'>Conoce más</button>
+            </Link>
+        </div> 
+        </div>
+        
+    </div>
+  {/*
+   
+    <Responsive displayIn={['Laptop', 'LargerThanLaptop']}>
+
+        <div className='home1 home'>
+              <img src={Home1} alt='home1' className='home1'/>
+              <div className='home1-text'>
+                <p>Home costos.</p>
+                <Responsive displayIn={['Laptop', 'LargerThanLaptop']}>
+                
+                  <Link to='/costos'>
+                    <button className=' btn btn-hero btn-desktop'  >Conoce más</button>
+                  </Link> 
                   
                 </Responsive>
                 <Responsive displayIn={['mobile', 'tablet']}>
                   <button className=' btn btn-hero btn-mobile'>Conoce más</button>
                 </Responsive>
-      </div>
-    </div>
+                
+              </div>
+            </div>
+
+
     </Responsive>
 
-    <Responsive displayIn={["mobile", "tablet"]}>
-    <nav  className='menuOpen'>
+<Responsive displayIn={["mobile", "tablet"]}>
+<nav className='menuOpen'>
        <img src={logo} />
        <AiOutlineMenu className="home-menu" onClick={openMenu}/>
             {menuOpen ?  <MenuOpen close={closeMenu}/> : console.log('mp')}
@@ -49,7 +68,9 @@ function Home_2() {
               <img src={HomeMobile} alt='home1' className='homeMobile'/>
             </div>
 
-    </Responsive>
+</Responsive>
+
+ */} 
     </>
     
   )

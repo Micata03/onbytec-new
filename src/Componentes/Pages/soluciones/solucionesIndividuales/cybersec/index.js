@@ -31,11 +31,11 @@ const background ={
         <Header
         img={img}
         servicio={'Cybersecurity'}
-        desc={'Digital transformation requires so much ore than new technology. It requires undamental changes to culture, communications, and how work gets done. Without the right efforts'}
+        desc={'Logre un equilibrio que lo mantenga seguro, lo ayudaremos a examinar todo su entorno, inlcuida la seguridad de sus datos.'}
         crumb={'security'}
         title={'realidad den entorno digital'}
         span={'la vulnerabilidad es una'}
-        parrafo={'Digital transformation requires so much more than new technology. It requires fundamental changes to culture, communications, and how work gets done. Without the right foundation in place to enable change, your digital efforts will estalla.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.'}
+        parrafo={'El modelo comercial digital que ejecutamos en la actualidad, se enfrenta a un panorama de amenazas en constante evolución. En Onbytec ayudamos a nuestros clientes a crear una estrategia resistente de seguridad cibernética para gestionar de forma eficaz las amenazas, reducir el riesgo comercial y garantizar el cumplimiento de los protocolos.'}
         sector={'soluciones'}
         />
       <article>
@@ -45,34 +45,38 @@ const background ={
             </div>
             <div className='cloud-text'>
               <h3>seguridad</h3>
-              <p> Innove rápidamente,cree nuevas fuentes
-                  de ingresos y mejore la experiencia de los
-                  clientes con menos costos y
-                  riesgos.aliquam erat volutpat. Ut wisi
-                  enim ad minim veniam, quis nostrud exerci
-                  tation explore nuestras soluciones.
+              <p> La ciberseguridad ya no es un
+                  departamento aislado,nos encargamos de
+                  mantener las prioridades críticas en toda
+                  la empresa y la identificación temprana de
+                  vulnerabilidades y respuesta a incidentes
+                  ofreciendo un enfoque personalizado.
               </p>
             </div>
           </div>
         </article>
         <article style={background}>
-        
+        <div className='componentes-textos'>
+          
+            <h2>la metodología correcta</h2>
+              <p>Brindamos un alto nivel de soporte en respuesta a incidentes, desde la planificación, solución y la correcta recuperación.</p>
+         
+              
+            </div>
           <div className='componentes' style={color}>
+            
            
                 <div className='componente' style={margin}  >
                   <img src={icono1} alt='#'/>
                   <h4>planeacion</h4>
-                  <p>Digital transformation requires so much more than new technology. It requires fundamentalchanges to</p>
                 </div>
                 <div className='componente' style={margin} >
                   <img src={icono2} alt='#'/>
                   <h4>solucion</h4>
-                  <p>Digital transformation requires so much more than new technology. It requires fundamentalchanges to</p>
                 </div>
                 <div className='componente' style={margin}  >
                   <img src={icono3} alt='#'/>
                   <h4>recuperacion</h4>
-                  <p>Digital transformation requires so much more than new technology. It requires fundamentalchanges to</p>
                 </div>
 
            
@@ -85,53 +89,61 @@ const background ={
                 <h4><span>proteja</span> sus datos</h4>
               </div>
               <div className='info-2'>
-                <p>Protect your organization’s data and
-                    system 24/7, with cloud-based
-                    vulnerability scanning tools and
-                    management.
+                <p>Brinde una experiencia perfecta y segura,
+                    para los trabajadores de su empresa,
+                    independientemente de su ubicación
                 </p>
               </div>
               
             </div>
             <div className='componente-info'>
               <div className='info-1'>
-                <h4><span>hacer</span> algo</h4>
+                <h4><span>analice</span> los riesgos</h4>
               </div>
               <div className='info-2'>
-                <p>Protect your organization’s data and
-                    system 24/7, with cloud-based
-                    vulnerability scanning tools and
-                    management.
+                <p>Ofrezca las mejores prácticas para
+                aplicar políticas efectivas y compatibles
+                con las operaciones de la empresa.
                 </p>
               </div>
               
             </div>
             <div className='componente-info'>
               <div className='info-1'>
-                <h4><span>invierta</span> en su seguridad</h4>
+                <h4><span>invierta</span> en  seguridad</h4>
               </div>
               <div className='info-2'>
-                <p>Protect your organization’s data and
-                    system 24/7, with cloud-based
-                    vulnerability scanning tools and
-                    management.
+                <p>Que la seguridad seaun medio para que
+                  trabaje de manera más productiva y haga
+                  todo de manera más segura.
+
                 </p>
               </div>
               
             </div>
             <div className='componente-info'>
               <div className='info-1'>
-                <h4><span>hacer</span> algo</h4>
+                <h4><span>identifique</span> amenazas</h4>
               </div>
               <div className='info-2'>
-                <p>Protect your organization’s data and
-                    system 24/7, with cloud-based
-                    vulnerability scanning tools and
-                    management.
+                <p>Tenga mayor visibilidad de quién y qué
+                  dispositivos solicitan acceso a su red
                 </p>
               </div>
               
             </div>
+          </div>
+        </article>
+        <article className='banner-seguridad'>
+          <div className='banner-seguridad-text'>
+            <p>
+              Vamos más allá de mitigar el
+              riesgo: nos anticipamos a las
+              amenazas y brindamos soporte
+              las 24 horas.
+            </p>
+            <div className='banner-sub'></div>
+          
           </div>
         </article>
         <Contacto/>

@@ -29,7 +29,7 @@
 
 .seccion-grid-2 > p {
     font-family: 'Poppins', sans-serif;
-    font-size: 2.5rem;
+    font-size: var(--title-fontSize);
     width: 50%;
     margin: 0 auto;
 }

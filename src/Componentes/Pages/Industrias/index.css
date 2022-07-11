@@ -26,7 +26,7 @@
 
 .heroInd-text{
     width: 30%;
-    margin-top: 16vh;
+    margin-top: 8%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -98,6 +98,16 @@
     font-size: 1rem;
     margin-bottom: 4vh;
 
+}
+
+/******************Monitor chico *****************/
+
+@media only screen and (min-width: 1020px) and (max-width: 1768px){
+    .ind-cards{
+        width: 100%;
+        margin: 0;
+        justify-items: center;
+    }
 }
 
 /********mobile************/

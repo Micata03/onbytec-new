@@ -10,7 +10,7 @@ export const productos = [
         id:1,
         img : consultoria,
         alt: 'consultoria',
-        desc: 'Asesoramiento desde la idea inicial del proyecto para llevar a cabo el proyecto',
+        desc: 'Ofrecemos asesoramiento desde la idea inicial del proyecto ,hasta el diseño, implementación y mantenimiento de las nuevas tecnologías',
         subtitle: 'consultoria'
         
         
@@ -20,7 +20,7 @@ export const productos = [
         id:2,
         img : soporte,
         alt: 'soporte',
-        desc: 'Asesoramiento desde la idea inicial del proyecto para llevar a cabo el proyecto',
+        desc: 'Le brindamos asistencia continua asegurándole la alta disponibilidad de todos los equipos de su empresa.',
         subtitle: 'soporte tecnico'
         
         
@@ -30,7 +30,7 @@ export const productos = [
         id:3,
         img : outsourcing,
         alt: 'outsourcing',
-        desc: 'Asesoramiento desde la idea inicial del proyecto para llevar a cabo el proyecto',
+        desc: 'Obtenga diversos beneficios bajo el modelo de tercerización de recursos, incorpore técnicos de manera externa en su departamento de IT.',
         subtitle: 'Outsourcing'
         
         
@@ -40,21 +40,12 @@ export const productos = [
         id:4,
         img : auditoria,
         alt: 'auditoria',
-        desc: 'Asesoramiento desde la idea inicial del proyecto para llevar a cabo el proyecto',
+        desc: 'Prestamos servicios de auditorías de procesos y de seguridad identificando los principales riesgos , resultado de posibles debilidades de control.',
         subtitle: 'auditoria'
         
         
 
     },
-    {
-        id:5,
-        img : consultoria,
-        alt: 'consultoria',
-        desc: 'Asesoramiento desde la idea inicial del proyecto para llevar a cabo el proyecto',
-        subtitle: 'consultoria'
-        
-        
-
-    }
+    
 
 ];

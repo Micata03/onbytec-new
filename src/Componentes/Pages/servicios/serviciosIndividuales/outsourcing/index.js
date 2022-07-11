@@ -13,11 +13,11 @@ function Outsourcing() {
         <Header
         img={img}
         servicio={'Outsourcing'}
-        desc={'Digital transformation requires so much ore than new technology. It requires undamental changes to culture, communications, and how work gets done. Without the right efforts'}
+        desc={'La posibilidad de obtener diversos beneficios bajo el modelo de tercerización de recursos.'}
         crumb={'outsourcing'}
         title={'para ejecutar con éxito'}
         span={'recursos especializados'}
-        parrafo={'Digital transformation requires so much more than new technology. It requires fundamental changes to culture, communications, and how work gets done. Without the right foundation in place to enable change, your digital efforts will estalla.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.'}
+        parrafo={'El Outsourcing se presenta cuando los recursos tanto físicos como de personal se concentran en otra empresa especializada. En Onbytec brindamos, en forma permanente o por el lapso del proyecto, profesionales especializados en el análisis y desarrollo de sistemas para empresas, que están o no relacionados con su core business.'}
         sector={'servicios'}
         />
         <article className='low-seccion'>

@@ -2,11 +2,13 @@ import React, { useEffect, useState } from 'react'
 import './hero.css'
 import Navbar from '../../Pages/navbar/index'
 import logo from '../../../Images/logohero-03.png'
+
+import Home4 from '../../../Images/nube4.png'
 import Home_1 from './Home_1'
 import Home_2 from './Home_2'
 import Home_3 from './Home_3'
 import Home_4 from './Home_4'
-import Home4 from '../../../Images/img_hero4.png'
+
 import Home2 from '../../../Images/nube2.png'
 import Home1 from '../../../Images/nube1.png'
 import Home3 from '../../../Images/nube3.png'
@@ -17,6 +19,9 @@ import fondo4 from '../../../Images/fondo_hero4.jpg'
 import {
     Responsive,IDeviceInfo,} from 'typed-responsive-react';
 import { Link } from 'react-router-dom'
+import HeroMobile from '../Hero/heroMobile/index'
+import './hero.css'
+import NavBar from '../../Pages/navbar/index'
    
     
    
@@ -38,32 +43,7 @@ function Hero() {
 
     const [id, setId] = useState(1);
 
-    useEffect(()=>{
-        const imgs = [
-            Home1, Home2, Home3, Home4, fondo1, fondo2, fondo3, fondo4
-        ];
-
-        cacheImages(imgs);
-    }, [])
-
-
-
-    const cacheImages = async (srcArray) =>{
-        const promises = await srcArray.map((src)=>{
-            return new Promise(function(resolve, reject){
-                const img = new Image();
-                img.src = src;
-                Image.onload = resolve();
-                Image.onerror= reject();
-            });
-        });
-
-        await Promise.all(promises);
-
-        setIsLoading(false)
-    }
-
-
+    
  
 
  
@@ -82,16 +62,45 @@ const test2 = ()=>{
     setId(4)
 }
 
-let componente = <Home_1/>
-    if (id===1) {
-         componente =   <Home_1/>
- } if (id===2){
-     componente= <Home_2/>
- }if (id===3){
-     componente = <Home_3/>
- }if (id===4){
-    componente = <Home_4/>
+
+
+let background = {
+    backgroundImage:  `url(${Home1})`
 }
+
+let componente = <Home_1 background={background}/>
+
+
+
+    if (id===1) {
+        background = {
+            backgroundImage:  `url(${Home1})`
+        }
+        componente = <Home_1 background={background}/>
+
+
+      
+         
+         
+ } if (id===2){
+    background = {
+        backgroundImage:  `url(${Home2})`
+    }
+    componente = <Home_2 background={background}/>
+    
+ }if (id===3){
+    background = {
+        backgroundImage:  `url(${Home3})`
+    }
+    componente = <Home_3 background={background}/>
+    
+ }if (id===4){
+    background = {
+        backgroundImage:  `url(${Home4})`
+    }
+    componente = <Home_4 background={background}/>
+    
+}       
 
 let hero = 'hero'
 
@@ -112,63 +121,74 @@ let hero = 'hero'
   return (
 
     <main className={`${hero }`}>
+        <NavBar logo={logo} logoMobile={logo} color={color}/>
 
-        <Responsive displayIn={['Laptop', 'LargerThanLaptop']}>
-                
-                <Navbar logo={logo} color={color}/>
-                        <div className='hero-slider'>
-                            <div className='hero-slider-text'>
-                                <h1 className='hero-title'>¿Como podemos ayudarte?</h1>
-                                <div className='hero-text-list'>
-                                    <ul className='slider'>
-                                       
-                                        <li onMouseOver={tester} className='slider'>Reducir costos</li>
-                                       
+<Responsive displayIn={['Laptop', 'LargerThanLaptop']}>
+
+         
+         <div className='contenedor_home_grid'>
+                            <div className='contenedor_home_grid_text'>
+                                <div className='contenedor_texto'>
+
+                                
+                                <h1 >¿Como podemos ayudarte?</h1>
+                                <div className='contenedor_lista'>
+                                    <ul >
+                                       <Link to='/costos' style={{ color: 'inherit', textDecoration: 'inherit'}}>
+                                        <li onMouseOver={tester} className='li-hero'>Reducir costos</li>
+                                       </Link>
                                         
-                                        <li onMouseOver={test} className='slider' >Migrar a la nube</li>
-                                        <li onMouseOver={test1} className='slider'>Reforzar la seguridad</li>
-                                        <li onMouseOver={test2}className='slider'>Expandir mi equipo</li>
+                                       
+                                       <Link to='cloud' style={{ color: 'inherit', textDecoration: 'inherit'}}>
+                                        <li onMouseOver={test} className='li-hero'  >Migrar a la nube</li>
+                                        </Link>
+                                        <Link to='/seguridad' style={{ color: 'inherit', textDecoration: 'inherit'}}>
+                                        <li onMouseOver={test1} className='li-hero'>Reforzar la seguridad</li>
+                                        </Link>
+                                        <Link to='/equipo' style={{ color: 'inherit', textDecoration: 'inherit'}}>
+                                        <li onMouseOver={test2}className='li-hero'>Expandir mi equipo</li>
+                                        </Link>
                                     </ul>
                                 </div>
+                                </div>
                             </div>
-                            <div className='hero-imgs'>
+                            <div className='contenedor_home_grid_componente'>
+
+                           {componente}
                     
-                            {componente}
+                     {/*
+                     <div className='component' style={background}>
+        <div className='componente_contenido'>
+      
+        <div className='componente_text'>
+            <p>{texto}</p>
+            <Link to={`${link}`}>
+                <button className='btn btn-hero'>Conoce más</button>
+            </Link>
+        </div> 
+        </div>
+        
+    </div>
+                     
+                     */}       
                             
                             
                                 
                             </div>
                         </div>
 
-     </Responsive>
+                        </Responsive>    
 
-     <Responsive displayIn={["mobile", "tablet"]}>
-                        <div className='hero-slider-resp'>
-                            <div className='hero-slider-text-resp'>
-                                <h1 className='hero-title-resp'>¿Como podemos ayudarte?</h1>
-                                    <div className='hero-imgs-resp'>
-                                                        
-                                    {componente}
-                                    </div>                            
-                                 <div className='hero-text-list-resp'>
-                                    <ul className='slider'>
-                                        <li onMouseOver={tester} className='btn-slider-hero'>Reducir costos</li>
-                                        <li onMouseOver={test} className='btn-slider-hero' >Migrar a la nube</li>
-                                        <li onMouseOver={test1} className='btn-slider-hero'>Reforzar la seguridad</li>
-                                        <li onMouseOver={test2}className='btn-slider-hero'>Expandir mi equipo</li>
-                                    </ul>
-                                </div>
-                            </div>
-                           
-                        </div>                                
-                                                                    
-                                     
+                             <Responsive displayIn={["mobile", "tablet"]}>
+                              <div>
+                                
+                                <HeroMobile/>
+                              </div>
+                                
 
-                               
+</Responsive>     
+                       
 
-     </Responsive>
-
-        
 
     </main>
     

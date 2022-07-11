@@ -1,11 +1,13 @@
 import React, {useState, useEffect} from 'react'
-import Navbar from '../../../../Pages/navbar/index'
+
 import './layouts.css'
 import Breadcrumb from '../../../../Breadcrumb'
 import logo from '../../../../../Images/logohero-03.png'
+import NavBar from '../../../../Pages/navbar/index'
+import { Link } from 'react-router-dom'
 
 
-function Layout({img_hero, title, texto, boolean, parrafo, descripcion, title2, desc2, imgGrid, boton, crumb}) {
+function Layout({img_hero, title, texto, boolean, parrafo, descripcion, title2, desc2, imgGrid, boton, crumb, btnTexto, link}) {
     const [crumbs, setCrumbs] = useState(['Home', `${crumb}`]);
 
   const selected = crumb => {
@@ -19,14 +21,17 @@ function Layout({img_hero, title, texto, boolean, parrafo, descripcion, title2, 
         
     }
 
-    
+    const color ={
+        color: '#fff'
+    }
 
 
   return (
     <main >
         <article className='layoutHero' style={style} >
             <div className='overlay1'>
-              <Navbar logo={logo}/>
+             <NavBar logo={logo} logoMobile={logo} color={color}/>
+              
             <div className='layoutText'>
                 <h2>{title}</h2>
                 <p>{texto}</p>
@@ -55,7 +60,7 @@ function Layout({img_hero, title, texto, boolean, parrafo, descripcion, title2, 
                     <h3>{title2}</h3>
                     <p>{desc2}</p>
                     {
-                        boton &&  <button className='btn-hero'>como funciona</button>
+                        boton &&  <Link to={link}className='btn-hero'>{btnTexto}</Link>
                     }
                     
                 </div>

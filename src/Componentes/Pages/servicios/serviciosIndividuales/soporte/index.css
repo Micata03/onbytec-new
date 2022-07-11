@@ -45,18 +45,18 @@
 }
 
 .tec-grids{
-    width: 80%;
+    width: 90%;
     margin: 10vh auto;
-}
-.tec-grid{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin-bottom: 5vh;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
+
 .tec-grid >p {
-    width: 50%;
+    width: 70%;
+    margin-top: 5%;
 }
 .tec-grid > h4{
     color: var(--title-blue-light);
@@ -84,4 +84,10 @@
     .tec-title {
         text-align: center;
     }    
+    .tec-grids{
+        flex-direction: column-reverse;
+    }
+    .tec-grids>img{
+        width: 100%;
+    }
 }

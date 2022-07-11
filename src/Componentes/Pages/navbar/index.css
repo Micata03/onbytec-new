@@ -3,7 +3,7 @@
 .navbar{
     display: flex;
     flex-direction: row;
-    margin-left: 10vw;
+    /*margin-left: 10vw;*/
     max-width: 95%;
     margin: 0 auto;
   }
@@ -12,12 +12,17 @@
     width: 12vw;
     margin-top: 1vh;
   }
+
+  .nav-img{
+    width: 12vw;
+    margin-top: 1vh;
+  }
   
   .navbar > ul{
   
     display: flex;
     flex-direction: row;
-    margin-left: 20vw;
+   
     
    
   }
@@ -36,7 +41,7 @@
   
   .navbar >ul > .li:hover{
     font-weight: 700;
-    color: #fff;
+    color: #ccc;
     text-decoration: underline;
     
   
@@ -66,4 +71,66 @@
     width: 10rem;
   }
 
- 
+ /*****************Navbar Mobile ***********************/
+
+ .nav-mobile{
+  height: 15vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+ }
+
+ .logoMobile{
+  width: 50%;
+  padding: 1rem;
+ }
+
+ .menu-overlay{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  min-height: 100vh;
+  max-height: auto;
+  
+  background: #1963aa no-repeat padding-box;
+  opacity: 1;
+  z-index: 90;
+}
+
+/**************************menu open********************/
+
+.close-mobile{
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.accordion{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 10%;
+}
+.accordion-items{
+  margin-top: 7vh;
+}
+.accordion-titles{
+  display: flex;
+  flex-direction: row;
+  margin-left: 5%;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+.accordion-contents{
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin: 0 auto;
+  text-transform: capitalize;
+  margin-left: 20%;
+}
+

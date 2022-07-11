@@ -8,6 +8,15 @@
     
 }
 
+.seccion_text_false_parrafo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+
+}
+
 @media only screen and (min-width: 300px) and (max-width: 870px){
     .seccion2{
         min-height: auto;

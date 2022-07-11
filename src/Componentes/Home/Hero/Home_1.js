@@ -8,11 +8,12 @@ import {
   Responsive} from 'typed-responsive-react';
 import { Link } from 'react-router-dom'
 import Loader from '../../Pages/contacto/ContacForm/Loader/Loader'
+import './hero.css'
 
  
 
 
-function Home_1() {
+function Home_1({background}) {
 
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -31,6 +32,21 @@ function Home_1() {
   return (
     
   <>
+
+<div className='component' style={background}>
+        <div className='componente_contenido'>
+      
+        <div className='componente_text'>
+            <p>Optimiza y reduce los costos de tu empresa para lograr resultados más efectivos .</p>
+            <Link to='/costos'>
+                <button className='btn-home-hero'>Conoce más</button>
+            </Link>
+        </div> 
+        </div>
+        
+    </div>
+  {/*
+   
     <Responsive displayIn={['Laptop', 'LargerThanLaptop']}>
 
         <div className='home1 home'>
@@ -58,15 +74,15 @@ function Home_1() {
 <nav className='menuOpen'>
        <img src={logo} />
        <AiOutlineMenu className="home-menu" onClick={openMenu}/>
-            {menuOpen ?  <MenuOpen close={closeMenu}/> : console.log('mp')}
+            {menuOpen &  <MenuOpen close={closeMenu}/> }
      </nav>
       <div className='home1 home'>
               <img src={HomeMobile} alt='home1' className='homeMobile'/>
             </div>
 
 </Responsive>
-
-  
+*/} 
+ 
   </> 
   )
 }

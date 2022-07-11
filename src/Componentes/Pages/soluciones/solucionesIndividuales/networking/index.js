@@ -2,7 +2,9 @@ import React from 'react'
 import Header from '../../../servicios/header/Header'
 import img from './networking_1.jpg'
 import img1 from './networking_2.jpg'
-import icono1 from '../datacenter/icono2.png'
+import icono1 from './iconos_networking-61.png'
+import icono2 from './iconos_networking-62.png'
+import icono3 from './iconos_networking-63.png'
 import img2 from './networking_3.jpg'
 import Contacto from '../../../../Home/Contacto'
 import Footer from '../../../../Footer/Footer'
@@ -29,11 +31,11 @@ function Networking() {
         <Header
         img={img}
         servicio={'Networking'}
-        desc={'Digital transformation requires so much ore than new technology. It requires undamental changes to culture, communications, and how work gets done. Without the right efforts'}
+        desc={'La red mantiene a sus empleados conectados y productivos dondequiera que estén.'}
         crumb={'Networking'}
         title={'para tu equipo de trabajo'}
         span={'la herramienta necesaria'}
-        parrafo={'Digital transformation requires so much more than new technology. It requires fundamental changes to culture, communications, and how work gets done. Without the right foundation in place to enable change, your digital efforts will estalla.Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.'}
+        parrafo={'Descubra oportunidades para aprovechar las soluciones adecuadas y los proveedores para diseñar una infraestructura de IT creada para admitir aplicaciones y usuarios modernos en la red de trabajo.'}
         sector={'soluciones'}
         />
         <article>
@@ -43,12 +45,15 @@ function Networking() {
             </div>
             <div className='cloud-text'>
               <h3>conectividad</h3>
-              <p> Innove rápidamente,cree nuevas fuentes
-                  de ingresos y mejore la experiencia de los
-                  clientes con menos costos y
-                  riesgos.aliquam erat volutpat. Ut wisi
-                  enim ad minim veniam, quis nostrud exerci
-                  tation explore nuestras soluciones.
+              <p> 
+              Transforme las capacidades y el
+              rendimiento de su red adoptando una
+              solución definida por software, el
+              Networking le brinda una red flexible, fácil
+              de administrar y poderosa, al mismo
+              tiempo que crea oportunidades en el
+              mundo de las redes definidas por
+              software.
               </p>
             </div>
           </div>
@@ -70,17 +75,17 @@ function Networking() {
               <div className='componente' style={margin}  >
                 <img src={icono1} alt='#'/>
                 <h4>open networking</h4>
-                <p>Digital transformation requires so much more than new technology. It requires fundamentalchanges to</p>
+                <p>Ofrecer las mejores soluciones para su organización.</p>
               </div>
               <div className='componente' style={margin} >
-                <img src={icono1} alt='#'/>
+                <img src={icono2} alt='#'/>
                 <h4>software defined</h4>
-                <p>Digital transformation requires so much more than new technology. It requires fundamentalchanges to</p>
+                <p>Seleccionamos la plataforma que más se alinee con su estrategia tecnológica.</p>
               </div>
               <div className='componente' style={margin}  >
-                <img src={icono1} alt='#'/>
+                <img src={icono3} alt='#'/>
                 <h4>wireless</h4>
-                <p>Digital transformation requires so much more than new technology. It requires fundamentalchanges to</p>
+                <p>Para realizar negocios en cualquier lugar, en cualquier momento y desde cualquier dispositivo.</p>
               </div>
 
          
