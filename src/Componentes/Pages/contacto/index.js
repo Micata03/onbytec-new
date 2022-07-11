@@ -16,6 +16,7 @@ import {
   Responsive} from 'typed-responsive-react';
 import Breadcrumb from '../../Breadcrumb'
 import Form from '../contacto/ContacForm/Form'
+import NavBar from '../navbar'
 
 function Contacto() {
 
@@ -35,21 +36,7 @@ function Contacto() {
   }
   return (
     <div>
-     <Responsive displayIn={['Laptop', 'LargerThanLaptop']}>
-
-       <Navbar logo={logo}/>
-     </Responsive>
-
-      
-      <Responsive displayIn={["mobile", "tablet"]}>
-<nav className='menuOpen'>
-       <img src={logo1} />
-       <AiOutlineMenu className="home-menu" onClick={openMenu}/>
-            {menuOpen ?  <MenuOpen close={closeMenu}/> : console.log('mp')}
-     </nav>
-      
-
-</Responsive>
+        <NavBar logo={logo} logoMobile={logo}/>
       
       <article className='hero-contacto'>
         <div className='hero-text'>

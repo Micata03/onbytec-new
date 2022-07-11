@@ -61,7 +61,7 @@ function Contacto() {
 
   return(
    <main className='contacto-form'>
-       <article className='contenedor'>
+       <article className='contenedor-sumate'>
            
            <div className='contacto-grid-2'>
                 <form onSubmit={handleSubmit} className="form">
